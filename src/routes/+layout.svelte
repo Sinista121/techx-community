@@ -35,7 +35,7 @@
 		<div
 			class="pointer-events-auto flex font-extrabold w-full items-center tracking-wider justify-between rounded-xl bg-[#1E2027]/80 px-5 py-1 backdrop-blur-xs"
 		>
-			<h1 class="text-2xl md:text-4xl text-white">UMTC</h1>
+			<h1 class="text-2xl md:text-4xl text-white">TECHX</h1>
 			<nav
 				class="hidden md:flex items-center text-sm gap-4 rounded px-5 py-2 text-white uppercase whitespace-nowrap"
 			>
@@ -63,16 +63,16 @@
 					Learn More
 				</div>
 			</a>
-			<a class="flex md:hidden">
+			<a href="" class="flex md:hidden">
 				<BurgerIcon />
 			</a>
 		</div>
 		<div
-			class="fixed right-6 bottom-6 flex flex-col items-center gap-5 rounded-xl bg-white/10 p-2 text-xl"
+			class="fixed right-12 bottom-6 flex flex-col items-center gap-5 rounded-xl bg-white/10 p-2 text-xl"
 		>
-			<a><GithubIcon /></a>
+			<a href="https://github.com/Sinista121/techx-community"><GithubIcon /></a>
 			<a><LinkedInIcon /></a>
-			<a><WhatsappIcon /></a>
+			<a href=""><WhatsappIcon /></a>
 			<a><InstagramIcon /></a>
 		</div>
 	</div>

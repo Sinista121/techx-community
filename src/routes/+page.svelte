@@ -9,7 +9,7 @@
 
 		<div class="absolute inset-0 z-10 flex flex-col p-2 md:p-6">
 			<div class="flex h-full w-full flex-col items-center justify-center gap-10 text-center">
-				<h1 class="text-2xl md:text-6xl font-bold uppercase max-w-4xl">
+				<h1 class="text-2xl md:text-5xl font-bold uppercase max-w-4xl">
 					Welcome to the tech community
 					<br /> Where students collaborate
 					<br /> And build
@@ -51,7 +51,7 @@
 			<div
 				class="col-span-10 flex flex-col gap-10 border-x border-b border-white/30 p-6 md:p-14 text-center"
 			>
-				<h1 class="text-2xl md:text-6xl font-black">About Us</h1>
+				<h1 class="text-2xl md:text-5xl font-black">About Us</h1>
 				<p class="md:mx-30 text-sm md:text-xl text-balance text-white/90">
 					We are a lively tech community where passion meets play. Instead of just grinding through
 					code alone, we team up to explore new tech, join high-energy game jams, conduct casual
