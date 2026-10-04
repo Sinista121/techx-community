@@ -5,15 +5,15 @@
 			alt="Crisp background"
 			class="absolute h-full w-full object-cover"
 		/>
-		<div class="absolute h-full w-full bg-black/60"></div>
+		<div class="absolute h-full w-full bg-black/65"></div>
 
 		<div class="absolute inset-0 z-10 flex flex-col p-2 md:p-6">
 			<div class="flex h-full w-full flex-col items-center justify-center gap-10 text-center">
 				<h1 class="text-2xl md:text-5xl font-bold uppercase max-w-4xl title">
 					Welcome to our community
 					<br />
-					<p class="text-2xl normal-case text-[#e8e8e8] mt-2 text-shadow-sm">
-						Where students collaborate, build <br/> and inovate new technology
+					<p class="text-2xl normal-case text-[#F3F4F6] mt-2 text-shadow-sm">
+						Where students collaborate, build <br/> and innovate new technology
 					</p>
 				</h1>
 				<div class="flex gap-2">
@@ -22,9 +22,9 @@
 						class="hidden md:flex cursor-pointer rounded border border-[#848484] p-0.5"
 					>
 						<div
-							class="rounded bg-white/90 text-black text-sm px-10 py-2 font-bold uppercase transition-all hover:opacity-80"
+							class="rounded bg-white/90 text-black text-sm px-10 py-2 font-bold uppercase transition-all duration-200 hover:opacity-90"
 						>
-							Let's Go
+							Join Us
 						</div>
 					</a>
 					<a
@@ -32,9 +32,9 @@
 						class="hidden md:flex cursor-pointer rounded border border-[#848484] p-0.5"
 					>
 						<div
-							class="rounded bg-[#1E2027] text-white text-sm px-10 py-2 font-bold uppercase transition-all hover:opacity-80"
+							class="rounded bg-[#1E2027] text-white text-sm px-10 py-2 font-bold uppercase transition-all duration-200 hover:bg-white/90 hover:text-black"
 						>
-							View Components
+							Explore
 						</div>
 					</a>
 				</div>

@@ -10,27 +10,25 @@
 	import { page } from '$app/state';
 	import { onMount } from 'svelte';
 
+	import { fly } from 'svelte/transition';
+	import { cubicOut } from 'svelte/easing';
+
 	let { children } = $props();
 
 	let pages = [
-		{
-			name: 'Home',
-			url: '/'
-		},
-		{
-			name: 'Code Evening',
-			url: '/code'
-		},
-		{
-			name: 'Expo',
-			url: '/expo'
-		}
+		{ name: 'Home', url: '/' },
+		{ name: 'Expo', url: '/expo' },
+		{ name: 'Game Jam', url: '/gamejam' },
+		{ name: 'Code Evening', url: '/code' }
 	];
 
 	let currentPage = $state(pages.findIndex((p) => p.url === page.url.pathname));
-
 	let scrolled = $state(false);
+	let mounted = $state(false);
+
 	onMount(() => {
+		mounted = true;
+
 		const handleScroll = () => {
 			console.log('SCROLLING', scrolled);
 			scrolled = window.scrollY > 130;
@@ -49,21 +47,24 @@
 		>
 			<h1 class="text-2xl md:text-3xl text-white">TECHX³</h1>
 
-			<nav
-				class="fixed left-1/2 -translate-x-1/2 z-60 hidden md:flex border {!scrolled
-					? 'border-[#1E2027] bg-[#1E2027]/30'
-					: 'border-[#383a42] bg-[#1E2027]/80'} backdrop-blur-xs items-center text-xs gap-2 rounded px-3 py-2 text-white uppercase whitespace-nowrap"
-			>
-				{#each pages as p, i (i)}
-					<a
-						href={p.url}
-						onclick={() => (currentPage = i)}
-						class={`${currentPage == i ? 'bg-white text-black' : ''} hover:bg-white hover:text-black rounded py-1.5 px-3 transition-all duration-300`}
-					>
-						{p.name}
-					</a>
-				{/each}
-			</nav>
+			{#if mounted}
+				<nav
+					in:fly={{ y: -20, duration: 800, easing: cubicOut }}
+					class="fixed left-1/2 -translate-x-1/2 z-60 hidden md:flex border {!scrolled
+						? 'border-[#1E2027] bg-[#1E2027]/30'
+						: 'border-[#383a42] bg-[#1E2027]/80'} backdrop-blur-xs items-center text-xs gap-2 rounded px-3 py-2 text-white uppercase whitespace-nowrap"
+				>
+					{#each pages as p, i (i)}
+						<a
+							href={p.url}
+							onclick={() => (currentPage = i)}
+							class={`${currentPage == i ? 'bg-white text-black' : 'border border-[#7d7d7d]'} min-w-20 text-center tracking-wider hover:bg-white hover:text-black rounded py-1.5 px-3 transition-all duration-300`}
+						>
+							{p.name}
+						</a>
+					{/each}
+				</nav>
+			{/if}
 
 			<a href="/expo" class="flex md:hidden cursor-pointer rounded border border-[#848484] p-0.5">
 				<div
