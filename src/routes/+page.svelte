@@ -9,18 +9,35 @@
 
 		<div class="absolute inset-0 z-10 flex flex-col p-2 md:p-6">
 			<div class="flex h-full w-full flex-col items-center justify-center gap-10 text-center">
-				<h1 class="text-2xl md:text-5xl font-bold uppercase max-w-4xl">
-					Welcome to the tech community
-					<br /> Where students collaborate
-					<br /> And build
+				<h1 class="text-2xl md:text-5xl font-bold uppercase max-w-4xl title">
+					Welcome to our community
+					<br />
+					<p class="text-2xl normal-case text-[#e8e8e8] mt-2 text-shadow-sm">
+						Where students collaborate, build <br/> and inovate new technology
+					</p>
 				</h1>
-				<a href="#about" class="rounded-tl-2xl rounded-br-2xl border border-[#878989] p-0.5">
-					<div
-						class="rounded-tl-xl rounded-br-xl bg-[#f8f8f8] px-5 py-2 font-bold text-black uppercase"
+				<div class="flex gap-2">
+					<a
+						href="/#about"
+						class="hidden md:flex cursor-pointer rounded border border-[#848484] p-0.5"
 					>
-						Let's Go
-					</div>
-				</a>
+						<div
+							class="rounded bg-white/90 text-black text-sm px-10 py-2 font-bold uppercase transition-all hover:opacity-80"
+						>
+							Let's Go
+						</div>
+					</a>
+					<a
+						href="/#about"
+						class="hidden md:flex cursor-pointer rounded border border-[#848484] p-0.5"
+					>
+						<div
+							class="rounded bg-[#1E2027] text-white text-sm px-10 py-2 font-bold uppercase transition-all hover:opacity-80"
+						>
+							View Components
+						</div>
+					</a>
+				</div>
 			</div>
 			<div class="flex absolute bottom-6 left-2 md:left-6 flex-col items-center gap-10">
 				<div class="h-10 w-1 bg-white"></div>
@@ -30,13 +47,13 @@
 					class="h-60 w-auto object-contain text-white"
 				/>
 			</div>
-			<div class="flex absolute top-30 right-2 md:right-6 flex-col items-center gap-10">
+			<div class="flex absolute top-20 right-2 md:right-6 flex-col items-center gap-5">
 				<img
 					src="tech-vector.svg"
 					alt="tech visual"
 					class="h-60 w-auto object-contain text-white"
 				/>
-				<div class="h-30 w-1 bg-white"></div>
+				<div class="h-10 w-1 bg-white"></div>
 			</div>
 		</div>
 	</section>
