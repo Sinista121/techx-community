@@ -58,6 +58,8 @@
   });
 </script>
 
+<svelte:head><title>TechX³</title></svelte:head>
+
 <main>
   {#if isIntroActive}
     <div

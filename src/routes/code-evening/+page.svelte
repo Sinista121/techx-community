@@ -2,7 +2,7 @@
   import ComingSoon from '$lib/ComingSoon.svelte';
 </script>
 
-<svelte:head><title>Code Evening: coming soon | TechX³</title></svelte:head>
+<svelte:head><title>TechX³ | Code Evening</title></svelte:head>
 
 <ComingSoon
   tag="Code Evening"
