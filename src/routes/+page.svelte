@@ -32,6 +32,8 @@
     }
   ];
 
+  const whatsapp = "https://chat.whatsapp.com/LIgKW1fDkhI7v8tXpkjhLA";
+
   const lines = [
     { type: 'comment', text: '// events' },
     { type: 'link', text: 'Expo', href: '/expo', color: '#8ab4ff' },
@@ -121,7 +123,7 @@
           </p>
         </div>
         <div class="flex flex-wrap justify-center gap-2">
-          <a href="/#about" class="flex cursor-pointer rounded border border-[#848484] p-0.5">
+          <a href={whatsapp} target="_blank" class="flex cursor-pointer rounded border border-[#848484] p-0.5">
             <div
               class="rounded bg-white/90 text-black text-sm px-8 py-2 font-bold uppercase transition-all duration-200 hover:opacity-90 md:px-10"
             >
@@ -195,7 +197,7 @@
       <p class="max-w-sm text-sm text-white/70 md:text-base">
         A student tech community where we collaborate, build and innovate new technology together.
       </p>
-      <a href="/#about" class="cursor-pointer rounded border border-[#848484] p-0.5">
+      <a href={whatsapp} target="_blank" class="cursor-pointer rounded border border-[#848484] p-0.5">
         <div
           class="rounded bg-white/90 px-10 py-2 text-sm font-bold uppercase text-black transition-all duration-200 hover:opacity-90"
         >
