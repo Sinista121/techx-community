@@ -44,9 +44,9 @@
 <svelte:window onkeydown={(e) => e.key === 'Escape' && (menuOpen = false)} />
 
 <div>
-  <div class="pointer-events-none absolute inset-y-0 top-6 right-6 left-6 z-50">
+  <div class="pointer-events-none absolute inset-y-0 top-6 right-1 left-1 z-50">
     <div
-      class="pointer-events-auto relative transition-all duration-300 flex font-extrabold w-full items-center tracking-wider justify-between rounded-xl px-5 py-1"
+      class="pointer-events-auto relative transition-all duration-300 flex font-extrabold w-full items-center tracking-wider justify-between rounded-xl px-3 md:px-10 py-1"
     >
       <h1 class="text-2xl md:text-3xl text-white">TECHX³</h1>
 
@@ -78,7 +78,7 @@
 
       <button
         type="button"
-        class="flex cursor-pointer text-3xl text-white md:hidden bg-[#1F222B] rounded p-1"
+        class="flex cursor-pointer text-2xl text-white md:hidden bg-[#1F222B] rounded p-1"
         aria-label={menuOpen ? 'Close menu' : 'Open menu'}
         aria-expanded={menuOpen}
         aria-controls="mobile-menu"
@@ -99,7 +99,7 @@
               onclick={() => (menuOpen = false)}
               class="rounded px-4 py-3 text-center tracking-wider text-white transition-all duration-200 {currentPage ===
               i
-                ? 'bg-white text-black'
+                ? 'bg-white text-black!'
                 : 'border border-[#7d7d7d] hover:bg-white hover:text-black'}"
             >
               {p.name}
